@@ -2,6 +2,10 @@ import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
 import styles from "./layout.module.scss"
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { faGlassCheers, faChurch, faGift } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faGlassCheers, faChurch, faGift)
 
 const Layout = ({ children }) => (
   <Fragment>

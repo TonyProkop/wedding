@@ -1,5 +1,7 @@
 @import "./shared.scss";
 
+$hoverColor: grey;
+
 .headerConatiner {
     margin-bottom: 1.45rem;
     position: fixed;
@@ -25,15 +27,26 @@
 
 .headerTitle {
     margin-bottom: 0;
+
+    a:hover {
+        color: $hoverColor;
+    }
 }
 
 .navBar {
     list-style: none;
     margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
 
-    li {
+    a, li {
         display: inline-block;
         margin: 0;
         margin-left: 20px;
+        cursor: pointer;
+
+        &:hover {
+            color: $hoverColor;
+        }
     }
 }

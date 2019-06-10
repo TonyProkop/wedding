@@ -3,39 +3,38 @@ import PropTypes from "prop-types"
 import React from "react"
 import styles from "./header.module.scss"
 
-const Header = () => (
-  <header className={styles.headerConatiner}>
-    <div className={styles.header}>
-      <h1 className={styles.headerTitle}>
-        <Link to="/">
-          Tony & Katie
-        </Link>
-      </h1>
-      <ul className={styles.navBar}>
-        <li>
+const Header = () => {
+  const scrollIntoView = (id) => {
+    let element = document.getElementById(id)
+    element.scrollIntoView({ behavior: "smooth" })
+  }
+
+  return (
+    <header id="header" className={styles.headerConatiner}>
+      <div className={styles.header}>
+        <h1 className={styles.headerTitle}>
+          <Link to="/">
+            Tony & Katie
+          </Link>
+        </h1>
+        <ul className={styles.navBar}>
           <Link to="/">
             Home
           </Link>
-        </li>
-        <li>
-          <Link to="/">
+          <li onClick={() => scrollIntoView("weddingEvents")}>
             Wedding Events
-          </Link>
-        </li>
-        <li>
-          <Link to="/">
+          </li>
+          <li onClick={() => scrollIntoView("registry")}>
             Registry
-          </Link>
-        </li>
-        <li>
-          <Link to="/">
+          </li>
+          <li onClick={() => scrollIntoView("rsvp")}>
             RSVP
-          </Link>
-        </li>
-      </ul>
-    </div>
-  </header>
-)
+          </li>
+        </ul>
+      </div>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
