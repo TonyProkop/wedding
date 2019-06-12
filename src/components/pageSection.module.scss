@@ -1,3 +1,7 @@
 .pageSection {
-    padding-top: 125px;
+    padding: 75px 0;
+
+    &:nth-child(2n) {
+        background-color: #f4f4f4;
+    }
 }

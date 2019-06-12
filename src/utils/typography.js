@@ -12,7 +12,7 @@ const typography = new Typography({
         "Arial",
         "sans-serif",
     ],
-    bodyFontFamily: ["Dosis", "Georgia", "serif"],
+    bodyFontFamily: ["Poppins", "Georgia", "serif"],
     googleFonts: [{
         name: "Great Vibes",
         styles: [
@@ -25,6 +25,11 @@ const typography = new Typography({
         ]
     }, {
         name: "Alex Brush",
+        styles: [
+            
+        ]
+    }, {
+        name: "Poppins",
         styles: [
             
         ]
@@ -43,17 +48,17 @@ const typography = new Typography({
         },
         h4: {
             fontWeight: 'bold',
-            fontFamily: 'Dosis',
+            fontFamily: 'Poppins',
             textTransform: 'uppercase'
         },
         h5: {
             fontWeight: 'bold',
-            fontFamily: 'Dosis',
+            fontFamily: 'Poppins',
             textTransform: 'uppercase'
         },
         h6: {
             fontWeight: 'bold',
-            fontFamily: 'Dosis',
+            fontFamily: 'Poppins',
             textTransform: 'uppercase'
         }
     })
