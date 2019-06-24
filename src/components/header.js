@@ -10,7 +10,7 @@ const Header = () => {
   }
 
   return (
-    <header id="header" className={styles.headerConatiner}>
+    <header id="header" className={styles.headerContainer}>
       <div className={styles.header}>
         <h1 className={styles.headerTitle}>
           <Link to="/">
@@ -18,9 +18,11 @@ const Header = () => {
           </Link>
         </h1>
         <ul className={styles.navBar}>
-          <Link to="/">
-            Home
-          </Link>
+          <li>
+            <Link to="/">
+              Home
+            </Link>
+          </li>
           <li onClick={() => scrollIntoView("weddingEvents")}>
             Wedding Events
           </li>
