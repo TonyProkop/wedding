@@ -36,6 +36,7 @@ const typography = new Typography({
     }],
     overrideStyles: ({ adjustFontSizeTo }, options, styles) => ({
         h1: {
+            ...adjustFontSizeTo('7rem'),
             fontWeight: 'normal'
         },
         h2: {

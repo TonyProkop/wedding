@@ -8,30 +8,22 @@ $hoverColor: grey;
     top: 0;
     width: 100%;
     z-index: 1;
-    background-color: white;
-    border-bottom: #eee 1px solid;
+    background-color: transparent;
+    color: white;
 
     a {
         text-decoration: none;
-        color: hsla(0,0%,0%,0.8);
+        color: white;
     }
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin: 0 auto;
     max-width: $pageWidth;
     padding: 1.45rem 1.0875rem;
-}
-
-.headerTitle {
-    margin-bottom: 0;
-
-    a:hover {
-        color: $hoverColor;
-    }
 }
 
 .navBar {

@@ -12,11 +12,6 @@ const Header = () => {
   return (
     <header id="header" className={styles.headerContainer}>
       <div className={styles.header}>
-        <h1 className={styles.headerTitle}>
-          <Link to="/">
-            Tony & Katie
-          </Link>
-        </h1>
         <ul className={styles.navBar}>
           <li>
             <Link to="/">

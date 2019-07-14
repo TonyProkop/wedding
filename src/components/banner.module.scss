@@ -1,6 +1,16 @@
+.bannerContainer {
+    position: relative;
+
+    .bannerText {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        color: white;
+    }
+}
+
 .bannerLogo {
-    max-width: 500px;
-    border-radius: 50%;
     width: 100%;
-    padding: 2rem;
 }
