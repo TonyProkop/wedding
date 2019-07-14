@@ -1,8 +1,30 @@
 .weddingEventContainer {
     display: flex;
-
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
 }
 
 .weddingEvent {
     width: 50%;
+    margin: 30px;
+    padding: 2.5rem 2rem;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+
+        .seeLocation {
+            text-decoration: underline;
+        }
+    }
+
+    svg {
+        width: 40px !important;
+        height: auto;
+        margin: 1.66666rem;
+    }
 }
+

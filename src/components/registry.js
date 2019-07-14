@@ -3,12 +3,9 @@ import amazonLogo from "../images/amazon.png"
 import bedBathAndBeyondLogo from "../images/bed-bath-and-beyond.png"
 import targetLogo from "../images/target.png"
 import styles from "./registry.module.scss"
-import sharedStyles from "./layout.module.scss"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Registry = () => (
     <Fragment>
-        <FontAwesomeIcon icon="gift" className={sharedStyles.pageSectionHeadingIcon} />
         <h3>Registry</h3>
         <h4>Here's A Few Stores We're Registered With</h4>
         <a href="/">

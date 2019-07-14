@@ -9,20 +9,3 @@
 h1, h2, h3, h4, h5, h6, a, p, div, span {
     text-align: center;
 }
-
-h3 {
-    background: #cedbe9;
-    border-top: 2px solid #0E4D92;
-    border-bottom: 2px solid #0E4D92;
-    display: inline-block;
-    padding: 10px 20px;
-    color: $color-yale;
-}
-
-.pageSectionHeadingIcon {
-    display: block;
-    margin: auto;
-    width: 30px !important;
-    height: auto;
-    color: $color-yale;
-}

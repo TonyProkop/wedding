@@ -1,14 +1,13 @@
 import React, { Fragment } from "react"
 import styles from "./weddingEvents.module.scss"
-import sharedStyles from "./layout.module.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const WeddingEvents = () => (
     <Fragment>
-        <FontAwesomeIcon icon="church" className={sharedStyles.pageSectionHeadingIcon} />
         <h3>Wedding Events</h3>
         <div className={styles.weddingEventContainer}>
             <WeddingEvent
+                icon={<FontAwesomeIcon icon="church"></FontAwesomeIcon>}
                 title="Ceremony"
                 time="2:00 PM"
                 locationName="St. James Church"
@@ -17,6 +16,7 @@ const WeddingEvents = () => (
                 locationUrl="https://goo.gl/maps/h9atMBpbDPstEwNH6">
             </WeddingEvent>
             <WeddingEvent
+                icon={<FontAwesomeIcon icon="glass-cheers"></FontAwesomeIcon>}
                 title="Reception"
                 time="5:00 PM - 12:00 PM"
                 locationName="Legacy Hall"
@@ -28,8 +28,9 @@ const WeddingEvents = () => (
     </Fragment>
 )
 
-const WeddingEvent = ({ title, time, locationName, addressLine1, addressLine2, locationUrl }) => (
-    <div className={styles.weddingEvent}>
+const WeddingEvent = ({ icon, title, time, locationName, addressLine1, addressLine2, locationUrl }) => (
+    <a className={styles.weddingEvent} href={locationUrl} target="_blank" rel="noopener noreferrer">
+        {icon}
         <h4>{title}</h4>
         <p><b>{time}</b></p>
         <p>
@@ -39,9 +40,9 @@ const WeddingEvent = ({ title, time, locationName, addressLine1, addressLine2, l
             <br />
             {addressLine2}
             <br />
-            <a href={locationUrl} target="_blank" rel="noopener noreferrer">See Location</a>
         </p>
-    </div>
+        <div className={styles.seeLocation}>See Location</div>
+    </a>
 )
 
 export default WeddingEvents
