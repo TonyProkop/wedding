@@ -32,8 +32,12 @@ const WeddingEvent = ({ icon, title, time, locationName, addressLine1, addressLi
     <a className={styles.weddingEvent} href={locationUrl} target="_blank" rel="noopener noreferrer">
         {icon}
         <h4>{title}</h4>
-        <p><b>{time}</b></p>
-        <p>
+        <p className={styles.address}>
+            Saturday, 16 May 2020
+            <br />
+            {time}
+            <br />
+            <br />
             {locationName}
             <br />
             {addressLine1}

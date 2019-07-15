@@ -4,7 +4,7 @@ $hoverColor: grey;
 
 .headerContainer {
     margin-bottom: 1.45rem;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 1;
@@ -15,31 +15,17 @@ $hoverColor: grey;
         text-decoration: none;
         color: white;
     }
-}
 
-.header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0 auto;
-    max-width: $pageWidth;
-    padding: 1.45rem 1.0875rem;
-}
-
-.navBar {
-    list-style: none;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: bold;
-
-    a, li {
-        display: inline-block;
-        margin: 0;
-        margin-left: 20px;
+    svg {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 30px !important;
+        height: auto;
         cursor: pointer;
+    }
 
-        &:hover {
-            color: $hoverColor;
-        }
+    .headerMenu {
+        
     }
 }

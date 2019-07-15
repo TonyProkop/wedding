@@ -5,6 +5,15 @@
     background-image: url('../images/banner.jpg');
     background-position: center;
     background-size: cover;
+
+    svg {
+        position: absolute;
+        bottom: 1rem;
+        color: white;
+        width: 30px !important;
+        height: auto;
+        cursor: pointer;
+    }
 }
 
 .bannerText {
