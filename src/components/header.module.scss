@@ -17,15 +17,22 @@ $hoverColor: grey;
     }
 
     svg {
-        position: absolute;
-        top: 20px;
-        right: 20px;
         width: 30px !important;
         height: auto;
         cursor: pointer;
+        float: right;
+        margin: 20px;
     }
 
     .headerMenu {
-        
+        list-style: none;
+        text-align: right;
+        float: right;
+        clear: both;
+        margin-right: 20px;
+
+        li {
+            cursor: pointer;
+        }
     }
 }
