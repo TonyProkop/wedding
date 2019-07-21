@@ -19,10 +19,10 @@ const WeddingEvents = () => (
                 icon={<FontAwesomeIcon icon="glass-cheers"></FontAwesomeIcon>}
                 title="Reception"
                 time="5:00 PM - 12:00 PM"
-                locationName="Legacy Hall"
-                addressLine1="6104 Irvington Rd"
-                addressLine2="Omaha, NE 68134"
-                locationUrl="https://goo.gl/maps/VpqKUyJeKtRQKeFG6">
+                locationName="The Living Room"
+                addressLine1="1111 N 13th St"
+                addressLine2="Omaha, NE 68102"
+                locationUrl="https://goo.gl/maps/nLT3bTtK8NbjD1e78">
             </WeddingEvent>
         </div>
     </Fragment>
