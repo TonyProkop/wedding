@@ -1,0 +1,1 @@
+export const weddingDate = new Date("May 2, 2020 14:00:00")

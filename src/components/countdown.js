@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import { weddingDate } from "./shared"
 import styles from "./countdown.module.scss"
 
 const Countdown = () => {
@@ -15,7 +16,6 @@ const Countdown = () => {
     }
   })
 
-  const weddingDate = new Date("May 2, 2020 14:00:00")
   let delta = Math.abs(weddingDate - now) / 1000
 
   const days = Math.floor(delta / 86400)
