@@ -1,19 +1,24 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styles from "./rsvp.module.scss";
 
 const RSVP = () => (
-    <Fragment>
+    <div className={styles.rsvpSection}>
         <h3>Join Us</h3>
-        <form>
-            <input className={styles.rsvpInput} type="text" placeholder="First Name" />
-            <input className={styles.rsvpInput} type="text" placeholder="Last Name" />
-            <input className={styles.rsvpInput} type="text" placeholder="Email" />
-            <input type="checkbox" /> I'm bringing a plus one
-            Anything we should know?
-            <input className={styles.rsvpInput} type="textarea" />
+        <form className={styles.rsvpForm}>
+            <input className={styles.rsvpInput} type="text" placeholder="Full Name" />
+            <br />
+            <input className={styles.rsvpInput} type="text" placeholder="Email Address" />
+            <br />
+            <label>
+                <input className={styles.rsvpInput} type="checkbox" /> 
+                I'm bringing a plus one
+            </label>
+            <br />
+            <textarea className={styles.rsvpInput} type="text" placeholder="Message" />
+            <br />
             <input type="submit" />
         </form>
-    </Fragment>
+    </div>
 )
 
 export default RSVP

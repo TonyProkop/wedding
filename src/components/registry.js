@@ -8,15 +8,17 @@ const Registry = () => (
     <Fragment>
         <h3>Registry</h3>
         <div className={styles.subtitle}>Here's A Few Stores We're Registered With</div>
-        <a href="/">
-            <img src={amazonLogo} className={styles.store} alt="Amazon" />
-        </a>
-        <a href="/">
-            <img src={bedBathAndBeyondLogo} className={styles.store} alt="Bed Bath and Beyond" />
-        </a>
-        <a href="/">
-            <img src={targetLogo} className={styles.store} alt="Target" />
-        </a>
+        <div className={styles.registryContainer}>
+            <a href="/">
+                <img src={amazonLogo} className={styles.store} alt="Amazon" />
+            </a>
+            <a href="/">
+                <img src={bedBathAndBeyondLogo} className={styles.store} alt="Bed Bath and Beyond" />
+            </a>
+            <a href="/">
+                <img src={targetLogo} className={styles.store} alt="Target" />
+            </a>
+        </div>
     </Fragment>
 )
 

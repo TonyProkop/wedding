@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.timeblock {
+    display: inline-block;
+    margin: 0 5%;
+}
+
+.number {
+    font-family: "Alex Brush";
+    font-size: 3rem;
+}
+
+.label {
+    text-transform: uppercase;
+}

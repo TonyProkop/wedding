@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const WeddingEvents = () => (
     <Fragment>
-        <h3>Wedding Events</h3>
+        <h3>When & Where</h3>
         <div className={styles.weddingEventContainer}>
             <WeddingEvent
                 icon={<FontAwesomeIcon icon="church"></FontAwesomeIcon>}

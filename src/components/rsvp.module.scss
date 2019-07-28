@@ -1,5 +1,37 @@
+.rsvpSection {
+    
+}
+
+.rsvpForm {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+    color: #8e8e8e;
+}
+
 .rsvpInput {
     border: 0;
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
 
+    &:placeholder {
+        color: #8e8e8e;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &[placeholder='Full Name'], &[placeholder='Email Address'], &[placeholder='Message'] {
+        width: 100%;
+    }
+
+    &[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    &[placeholder='Message'] {
+        min-height: 150px;
+    }
 }

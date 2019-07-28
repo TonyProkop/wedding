@@ -13,17 +13,19 @@ const typography = new Typography({
         "sans-serif",
     ],
     bodyFontFamily: ["Poppins", "Georgia", "serif"],
-    googleFonts: [{
-        name: "Great Vibes",
-        styles: [
-            "normal"
-        ]
-    }, {
-        name: "Dosis",
-        styles: [
+    googleFonts: [
+    //     {
+    //     name: "Great Vibes",
+    //     styles: [
+    //         "normal"
+    //     ]
+    // }, {
+    //     name: "Dosis",
+    //     styles: [
 
-        ]
-    }, {
+    //     ]
+    // }, 
+    {
         name: "Alex Brush",
         styles: [
             

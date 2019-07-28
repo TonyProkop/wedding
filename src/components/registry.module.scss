@@ -2,9 +2,12 @@
     color: #777;
 }
 
+.registryContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .store {
-    display: inline-block;
-    width: 33.33333%;
     padding: 50px;
     filter: opacity(60%);
 }
