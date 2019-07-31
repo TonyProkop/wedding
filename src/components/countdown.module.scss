@@ -6,12 +6,23 @@
 
 .timeblock {
     display: inline-block;
-    margin: 0 5%;
+    margin: 0 1rem;
+    width: 85px;
 }
 
 .number {
     font-family: "Alex Brush";
     font-size: 3rem;
+}
+
+@media(max-width:600px) {
+    .timeblock {
+        width: 60px;
+    }
+
+    .number {
+        font-size: 2rem;
+    }
 }
 
 .label {

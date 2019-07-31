@@ -9,7 +9,7 @@ import RSVP from "../components/rsvp";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Tony & Katie's Wedding" />
     <Banner />
     <PageSection id="weddingEvents">
       <WeddingEvents />
