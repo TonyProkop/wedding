@@ -15,6 +15,16 @@
   font-size: 3rem;
 }
 
+@media (max-width: 600px) {
+  .timeblock {
+    width: 60px;
+  }
+
+  .number {
+    font-size: 2rem;
+  }
+}
+
 .label {
   text-transform: uppercase;
 }

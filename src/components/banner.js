@@ -9,7 +9,7 @@ const Banner = () => {
     <div className={styles.bannerContainer}>
       <div className={styles.bannerText}>
         <div className={styles.subhead}>The Wedding Celebration of</div>
-        <h1>Tony & Katie</h1>
+        <h1 className={styles.bannerTitle}>Tony & Katie</h1>
         <Countdown />
       </div>
       <FontAwesomeIcon
