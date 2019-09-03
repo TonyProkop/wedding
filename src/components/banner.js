@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import styles from "./banner.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Countdown from "./countdown"
 import scrollIntoView from "../utils/scrollIntoView"
 
 const Banner = () => {
-
-
   return (
     <div className={styles.bannerContainer}>
       <div className={styles.bannerText}>
