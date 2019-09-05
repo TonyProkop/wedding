@@ -31,21 +31,24 @@ const Countdown = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.timeblock}>
-        <div className={styles.number}>{days}</div>
-        <div className={styles.label}>Days</div>
-      </div>
-      <div className={styles.timeblock}>
-        <div className={styles.number}>{hours}</div>
-        <div className={styles.label}>Hours</div>
-      </div>
-      <div className={styles.timeblock}>
-        <div className={styles.number}>{minutes}</div>
-        <div className={styles.label}>Mins</div>
-      </div>
-      <div className={styles.timeblock}>
-        <div className={styles.number}>{seconds}</div>
-        <div className={styles.label}>Secs</div>
+      <h3 className={styles.weddingDate}>June 20th, 2020</h3>
+      <div className={styles.countdown}>
+        <div className={styles.timeblock}>
+          <div className={styles.number}>{days}</div>
+          <div className={styles.label}>Days</div>
+        </div>
+        <div className={styles.timeblock}>
+          <div className={styles.number}>{hours}</div>
+          <div className={styles.label}>Hours</div>
+        </div>
+        <div className={styles.timeblock}>
+          <div className={styles.number}>{minutes}</div>
+          <div className={styles.label}>Mins</div>
+        </div>
+        <div className={styles.timeblock}>
+          <div className={styles.number}>{seconds}</div>
+          <div className={styles.label}>Secs</div>
+        </div>
       </div>
     </div>
   )

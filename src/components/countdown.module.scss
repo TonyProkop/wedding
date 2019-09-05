@@ -1,18 +1,29 @@
 .container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)),
+    url("../images/background_15.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  padding: 100px 50px;
+}
+
+.countdown {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
 }
 
 .timeblock {
   display: inline-block;
   margin: 0 1rem;
-  width: 90px;
+  min-width: 125px;
+  padding: 1rem 2rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .number {
-  font-family: "Alex Brush";
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 600px) {

@@ -4,10 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const WeddingEvents = () => (
   <Fragment>
-    <h3>When & Where</h3>
+    <h3>Wedding Details</h3>
     <div className={styles.weddingEventContainer}>
       <WeddingEvent
-        icon={<FontAwesomeIcon icon="church" className={styles.eventLocation} />}
+        icon={
+          <FontAwesomeIcon icon="church" className={styles.eventLocation} />
+        }
         title="Ceremony"
         time="2:00 PM"
         locationName="St. James Church"
@@ -16,7 +18,12 @@ const WeddingEvents = () => (
         locationUrl="https://goo.gl/maps/h9atMBpbDPstEwNH6"
       />
       <WeddingEvent
-        icon={<FontAwesomeIcon icon="glass-cheers" className={styles.eventLocation} />}
+        icon={
+          <FontAwesomeIcon
+            icon="glass-cheers"
+            className={styles.eventLocation}
+          />
+        }
         title="Reception"
         time="5:00 PM - 12:00 PM"
         locationName="The Living Room"
@@ -60,9 +67,7 @@ const WeddingEvent = ({
     </p>
     <div className={styles.seeLocation}>
       See Location
-      <FontAwesomeIcon
-        icon="chevron-right"
-      />
+      <FontAwesomeIcon icon="chevron-right" />
     </div>
   </a>
 )
