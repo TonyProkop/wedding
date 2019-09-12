@@ -4,18 +4,30 @@ $hoverColor: grey;
 
 .headerContainer {
   width: 100%;
+  position: absolute;
   z-index: 1;
   background-color: transparent;
   color: white;
 
   &.desktop {
-    position: fixed;
-    top: 2rem;
-    padding: 0 2rem;
+    top: 1rem;
+    padding: 0 1rem;
+
+    &.fixed {
+      position: fixed;
+      background-color: white;
+      color: black;
+      top: 0;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+
+      .rsvp {
+        border: 1px solid black;
+      }
+    }
   }
 
   &.mobile {
-    position: absolute;
     top: 0;
     padding: 0;
   }
@@ -54,6 +66,7 @@ $hoverColor: grey;
     .rsvp {
       border: 1px solid white;
       margin-left: 1rem;
+      border-radius: 5px;
     }
   }
 }

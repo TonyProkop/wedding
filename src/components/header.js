@@ -1,35 +1,30 @@
 import PropTypes from "prop-types"
-import React, { useState, Fragment } from "react"
+import React, { useState, useEffect, Fragment } from "react"
+import { useMediaQuery } from "react-responsive"
 import styles from "./header.module.scss"
 import scrollIntoView from "../utils/scrollIntoView"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-// const EventListeners = () => {
-//   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
-//   const [heightFromTop, setHeightFromTop] = useState(
-//     document.documentElement.scrollTop
-//   )
-
-//   window.addEventListener("resize", setHeightFromTop(window.innerWidth))
-//   window.addEventListener(
-//     "scroll",
-//     setHeightFromTop(document.documentElement.scrollTop)
-//   )
-
-//   return <Header screenWidth={screenWidth} heightFromTop={heightFromTop} />
-// }
-
 const Header = () => {
-  // let sticky = false
-  // window.addEventListener("scroll", function(e) {
-  //   sticky = document.documentElement.scrollTop > window.innerHeight
-  // })
+  const isDesktop = useMediaQuery({ query: "(min-width: 700px)" })
 
-  if (window.innerWidth > 700) {
+  const [isBelowFold, setIsBelowFold] = useState(false)
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setIsBelowFold(
+        document.documentElement.scrollTop > window.innerHeight / 2
+      )
+    })
+  })
+
+  if (isDesktop) {
     return (
       <header
         id="header"
-        className={`${styles.headerContainer} ${styles.desktop}`}
+        className={`${styles.headerContainer} ${styles.desktop} ${
+          isBelowFold ? styles.fixed : false
+        }`}
       >
         <DesktopMenu />
       </header>
