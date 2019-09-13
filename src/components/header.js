@@ -7,8 +7,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Header = () => {
   const isDesktop = useMediaQuery({ query: "(min-width: 700px)" })
-
   const [isBelowFold, setIsBelowFold] = useState(false)
+  const [menuActive, setMenuActive] = useState(false)
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -18,6 +18,11 @@ const Header = () => {
     })
   })
 
+  const scrollIntoViewAndCloseMenu = id => {
+    scrollIntoView(id)
+    setMenuActive(false)
+  }
+
   if (isDesktop) {
     return (
       <header
@@ -26,7 +31,52 @@ const Header = () => {
           isBelowFold ? styles.fixed : false
         }`}
       >
-        <DesktopMenu />
+        <ul className={styles.headerMenu}>
+          <li onClick={() => scrollIntoViewAndCloseMenu("story")}>Our Story</li>
+          <li onClick={() => scrollIntoViewAndCloseMenu("weddingEvents")}>
+            Wedding Details
+          </li>
+          <li onClick={() => scrollIntoViewAndCloseMenu("photos")}>Photos</li>
+          <li onClick={() => scrollIntoViewAndCloseMenu("registry")}>
+            Registry
+          </li>
+          <li
+            onClick={() => scrollIntoViewAndCloseMenu("rsvp")}
+            className={styles.rsvp}
+          >
+            RSVP
+          </li>
+        </ul>
+      </header>
+    )
+  } else if (menuActive) {
+    return (
+      <header
+        id="header"
+        className={`${styles.headerContainer} ${styles.mobile} ${
+          styles.active
+        }`}
+      >
+        <FontAwesomeIcon
+          icon="times"
+          onClick={() => setMenuActive(!menuActive)}
+        />
+        <ul className={styles.headerMenu}>
+          <li onClick={() => scrollIntoViewAndCloseMenu("story")}>Our Story</li>
+          <li onClick={() => scrollIntoViewAndCloseMenu("weddingEvents")}>
+            Wedding Details
+          </li>
+          <li onClick={() => scrollIntoViewAndCloseMenu("photos")}>Photos</li>
+          <li onClick={() => scrollIntoViewAndCloseMenu("registry")}>
+            Registry
+          </li>
+          <li
+            onClick={() => scrollIntoViewAndCloseMenu("rsvp")}
+            className={styles.rsvp}
+          >
+            RSVP
+          </li>
+        </ul>
       </header>
     )
   } else {
@@ -35,50 +85,11 @@ const Header = () => {
         id="header"
         className={`${styles.headerContainer} ${styles.mobile}`}
       >
-        <MobileMenu />
-      </header>
-    )
-  }
-}
-
-const DesktopMenu = () => (
-  <ul className={styles.headerMenu}>
-    <li onClick={() => scrollIntoView("story")}>Our Story</li>
-    <li onClick={() => scrollIntoView("weddingEvents")}>Wedding Details</li>
-    <li onClick={() => scrollIntoView("photos")}>Photos</li>
-    <li onClick={() => scrollIntoView("registry")}>Registry</li>
-    <li onClick={() => scrollIntoView("rsvp")} className={styles.rsvp}>
-      RSVP
-    </li>
-  </ul>
-)
-
-const MobileMenu = () => {
-  const [menuActive, setMenuActive] = useState(false)
-
-  if (menuActive) {
-    return (
-      <Fragment>
         <FontAwesomeIcon
-          icon="times"
+          icon="bars"
           onClick={() => setMenuActive(!menuActive)}
         />
-        <ul className={styles.headerMenu}>
-          <li onClick={() => scrollIntoView("story")}>Our Story</li>
-          <li onClick={() => scrollIntoView("weddingEvents")}>
-            Wedding Details
-          </li>
-          <li onClick={() => scrollIntoView("photos")}>Photos</li>
-          <li onClick={() => scrollIntoView("registry")}>Registry</li>
-          <li onClick={() => scrollIntoView("rsvp")} className={styles.rsvp}>
-            RSVP
-          </li>
-        </ul>
-      </Fragment>
-    )
-  } else {
-    return (
-      <FontAwesomeIcon icon="bars" onClick={() => setMenuActive(!menuActive)} />
+      </header>
     )
   }
 }
