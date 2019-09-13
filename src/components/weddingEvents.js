@@ -53,7 +53,7 @@ const WeddingEvent = ({
     {icon}
     <h4>{title}</h4>
     <p className={styles.address}>
-      Saturday, 16 May 2020
+      Saturday, 2 May 2020
       <br />
       {time}
       <br />
