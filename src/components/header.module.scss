@@ -9,20 +9,6 @@ $hoverColor: grey;
   color: white;
   padding: 1rem;
 
-  &.desktop {
-    &.fixed {
-      position: fixed;
-      background-color: white;
-      color: black;
-      top: 0;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-
-      .rsvp {
-        border: 1px solid black;
-      }
-    }
-  }
-
   &.mobile {
     font-size: 1.5rem;
 

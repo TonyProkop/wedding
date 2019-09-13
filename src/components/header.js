@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { useMediaQuery } from "react-responsive"
 import styles from "./header.module.scss"
 import scrollIntoView from "../utils/scrollIntoView"
@@ -7,16 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Header = () => {
   const isDesktop = useMediaQuery({ query: "(min-width: 700px)" })
-  const [isBelowFold, setIsBelowFold] = useState(false)
   const [menuActive, setMenuActive] = useState(false)
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setIsBelowFold(
-        document.documentElement.scrollTop > window.innerHeight / 2
-      )
-    })
-  })
 
   const scrollIntoViewAndCloseMenu = id => {
     scrollIntoView(id)
@@ -27,9 +18,7 @@ const Header = () => {
     return (
       <header
         id="header"
-        className={`${styles.headerContainer} ${styles.desktop} ${
-          isBelowFold ? styles.fixed : false
-        }`}
+        className={`${styles.headerContainer} ${styles.desktop}`}
       >
         <ul className={styles.headerMenu}>
           <li onClick={() => scrollIntoViewAndCloseMenu("story")}>Our Story</li>
