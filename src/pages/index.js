@@ -17,14 +17,14 @@ const IndexPage = () => (
     <PageSection id="story">
       <Story />
     </PageSection>
-    <PageSection id="countdown">
-      <Countdown />
+    <PageSection id="photos">
+      <Photos />
     </PageSection>
     <PageSection id="weddingEvents">
       <WeddingEvents />
     </PageSection>
-    <PageSection id="photos">
-      <Photos />
+    <PageSection id="countdown">
+      <Countdown />
     </PageSection>
     <PageSection id="registry">
       <Registry />

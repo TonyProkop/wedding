@@ -4,7 +4,6 @@ import styles from "./story.module.scss"
 const Story = () => (
   <div>
     <h3>Our Story</h3>
-    <h4>LOREM IPSUM DUMMY TEXT</h4>
     <p className={styles.story}>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the

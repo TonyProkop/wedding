@@ -1,4 +1,7 @@
+@import "./shared.scss";
+
 .story {
-  max-width: 900px;
+  max-width: $pageWidth;
   margin: 0 auto;
+  padding: 0 1rem;
 }

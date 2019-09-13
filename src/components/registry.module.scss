@@ -1,11 +1,11 @@
-.subtitle {
-  color: #777;
-}
+@import "./shared.scss";
 
 .registryContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: $pageWidth;
+  margin: 0 auto;
 }
 
 .store {

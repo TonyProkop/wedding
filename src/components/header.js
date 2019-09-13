@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import React, { useState, useEffect, Fragment } from "react"
+import React, { useState, useEffect } from "react"
 import { useMediaQuery } from "react-responsive"
 import styles from "./header.module.scss"
 import scrollIntoView from "../utils/scrollIntoView"
@@ -33,10 +33,10 @@ const Header = () => {
       >
         <ul className={styles.headerMenu}>
           <li onClick={() => scrollIntoViewAndCloseMenu("story")}>Our Story</li>
+          <li onClick={() => scrollIntoViewAndCloseMenu("photos")}>Photos</li>
           <li onClick={() => scrollIntoViewAndCloseMenu("weddingEvents")}>
             Wedding Details
           </li>
-          <li onClick={() => scrollIntoViewAndCloseMenu("photos")}>Photos</li>
           <li onClick={() => scrollIntoViewAndCloseMenu("registry")}>
             Registry
           </li>

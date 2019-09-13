@@ -16,9 +16,6 @@ import styles from "./registry.module.scss"
 const Registry = () => (
   <Fragment>
     <h3>Gift Registry</h3>
-    <div className={styles.subtitle}>
-      Here's A Few Stores We're Registered With
-    </div>
     <div className={styles.registryContainer}>
       <StoreLink link="/" imageSrc={amazonLogo} altText="Amazon" />
       <StoreLink
