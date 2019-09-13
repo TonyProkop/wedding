@@ -55,14 +55,14 @@ $hoverColor: grey;
       padding: 0.5rem 1rem;
 
       &:hover {
-        text-decoration: underline;
+        background-color: hsla(0, 0%, 100%, 0.3);
+        box-shadow: #111111 0px 2px 10px -3px;
       }
     }
 
     .rsvp {
-      border: 1px solid white;
+      border: 2px solid white;
       margin-left: 1rem;
-      border-radius: 5px;
     }
   }
 }
