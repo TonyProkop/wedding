@@ -17,7 +17,11 @@ const Registry = () => (
   <Fragment>
     <h3>Gift Registry</h3>
     <div className={styles.registryContainer}>
-      <StoreLink link="/" imageSrc={amazonLogo} altText="Amazon" />
+      <StoreLink
+        link="https://www.amazon.com/wedding/tony-prokop-katie-johnson-omaha-may-2020/registry/22K5VIT5RA99"
+        imageSrc={amazonLogo}
+        altText="Amazon"
+      />
       <StoreLink
         link="/"
         imageSrc={bedBathAndBeyondLogo}
@@ -46,7 +50,12 @@ const Registry = () => (
 )
 
 const StoreLink = ({ link, imageSrc, altText }) => (
-  <a href={link} className={styles.store}>
+  <a
+    href={link}
+    className={styles.store}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <img src={imageSrc} alt={altText} />
   </a>
 )
