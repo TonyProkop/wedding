@@ -20,11 +20,13 @@ const RSVP = () => (
         <input
           className={styles.rsvpInput}
           type="text"
+          name="email"
           placeholder="Email Address"
+          required="true"
         />
         <br />
         <label>
-          <input className={styles.rsvpInput} type="checkbox" />
+          <input className={styles.rsvpInput} type="checkbox" name="plusOne" />
           I'm bringing a plus one
         </label>
         <br />
@@ -32,6 +34,7 @@ const RSVP = () => (
           className={styles.rsvpInput}
           type="text"
           placeholder="Message"
+          name="message"
         />
         <br />
         <input type="submit" />
