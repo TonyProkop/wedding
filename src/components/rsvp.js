@@ -5,7 +5,12 @@ const RSVP = () => (
   <div className={styles.rsvpSection}>
     <div className={styles.rsvpContainer}>
       <h3>Join Us</h3>
-      <form name="rsvp" method="POST" className={styles.rsvpForm}>
+      <form
+        name="rsvp"
+        method="POST"
+        className={styles.rsvpForm}
+        data-netlify="true"
+      >
         <input
           className={styles.rsvpInput}
           type="text"
