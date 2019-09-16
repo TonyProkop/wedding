@@ -10,11 +10,14 @@ const RSVP = () => (
         method="POST"
         className={styles.rsvpForm}
         data-netlify="true"
+        netlify-honeypot="bot-field"
       >
         <input
           className={styles.rsvpInput}
           type="text"
+          name="name"
           placeholder="Full Name"
+          required="true"
         />
         <br />
         <input
@@ -37,6 +40,7 @@ const RSVP = () => (
           name="message"
         />
         <br />
+        <input name="bot-field" className={styles.honeypot} />
         <input type="submit" />
       </form>
     </div>
