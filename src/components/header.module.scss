@@ -32,13 +32,14 @@ $hoverColor: grey;
     color: black;
   }
 
-  ul {
+  .headerMenu {
     flex-direction: column;
     width: 100%;
-  }
 
-  li {
-    text-align: center;
+    li {
+      text-align: center;
+      margin: 0;
+    }
   }
 }
 
@@ -52,7 +53,7 @@ $hoverColor: grey;
 
   li {
     cursor: pointer;
-    margin: 0;
+    margin: 0 0 0 1rem;
     padding: 0.5rem 1rem;
 
     &:hover {
