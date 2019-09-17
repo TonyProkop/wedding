@@ -42,7 +42,7 @@ const RSVP = () => (
         />
         <br />
         <input name="bot-field" className={styles.honeypot} />
-        <input type="submit" />
+        <input type="submit" className={styles.button} value="SUBMIT" />
       </form>
     </div>
   </div>

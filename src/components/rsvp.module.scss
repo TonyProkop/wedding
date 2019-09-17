@@ -1,9 +1,11 @@
+@import "./shared.scss";
+
 .rsvpSection {
   background-image: url("../images/footer-background.jpg");
   background-position: center;
   background-size: cover bottom;
   background-repeat: no-repeat;
-  padding: 0 0 20rem;
+  padding: 0 1rem 20rem;
 }
 
 .rsvpContainer {
@@ -52,4 +54,20 @@
 
 .honeypot {
   display: none;
+}
+
+.button {
+  background-color: white;
+  border: 1px solid #eaeaea;
+  font-weight: bold;
+  padding: 0.5rem 2.5rem;
+  font-size: 0.75rem;
+  margin: 0 auto;
+  display: block;
+
+  &:hover {
+    background-color: $color-air-force;
+    cursor: pointer;
+    color: white;
+  }
 }
