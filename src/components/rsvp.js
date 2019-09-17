@@ -15,7 +15,7 @@ const RSVP = () => (
         <input
           className={styles.rsvpInput}
           type="text"
-          name="name"
+          name="fullName"
           placeholder="Full Name"
           required="true"
         />
