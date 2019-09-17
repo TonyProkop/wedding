@@ -12,4 +12,14 @@
   padding: 1rem;
   filter: opacity(60%);
   width: 300px;
+
+  img {
+    margin: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .store {
+    width: 250px;
+  }
 }

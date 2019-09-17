@@ -8,13 +8,19 @@ import three from "../images/katie_and_me/3.jpg"
 import four from "../images/katie_and_me/4.jpg"
 import five from "../images/katie_and_me/5.jpg"
 import six from "../images/katie_and_me/6.jpg"
+import eight from "../images/katie_and_me/8.jpg"
+import nine from "../images/katie_and_me/9.jpg"
+import ten from "../images/katie_and_me/10.jpg"
 
 const images = [
-  { src: one, width: 3, height: 4 },
-  { src: two, width: 3, height: 4 },
-  { src: three, width: 1, height: 1 },
+  { src: eight, width: 1440, height: 1920 },
+  { src: nine, width: 640, height: 1317 },
+  { src: ten, width: 640, height: 1317 },
+  { src: one, width: 1440, height: 1920 },
+  { src: two, width: 206, height: 274 },
+  { src: three, width: 719, height: 723 },
   { src: four, width: 1242, height: 933 },
-  { src: five, width: 3, height: 4 },
+  { src: five, width: 1440, height: 1920 },
   { src: six, width: 988, height: 1920 },
 ]
 
@@ -35,7 +41,7 @@ const Photos = props => {
 
   return (
     <Fragment>
-      <Gallery photos={images} onClick={openLightbox} />
+      <Gallery photos={images} onClick={openLightbox} targetRowHeight={400} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
