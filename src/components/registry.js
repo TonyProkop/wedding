@@ -20,31 +20,35 @@ const Registry = () => (
       <StoreLink
         link="https://www.amazon.com/wedding/tony-prokop-katie-johnson-omaha-may-2020/registry/22K5VIT5RA99"
         imageSrc={amazonLogo}
-        altText="Amazon"
+        altText="Amazon Registry"
       />
       <StoreLink
         link="/"
         imageSrc={bedBathAndBeyondLogo}
-        altText="Bed Bath and Beyond"
+        altText="Bed Bath and Beyond Registry"
       />
       <StoreLink link="/" imageSrc={targetLogo} altText="Target" />
       <StoreLink
         link="/"
         imageSrc={bloomingdalesLogo}
-        altText="Bloomingdales"
+        altText="Bloomingdales Registry"
       />
       <StoreLink
         link="/"
         imageSrc={crateAndBarrelLogo}
-        altText="Crate & Barrel"
+        altText="Crate & Barrel Registry"
       />
-      <StoreLink link="/" imageSrc={etsyLogo} altText="Etsy" />
-      <StoreLink link="/" imageSrc={jcpennyLogo} altText="JCPenny" />
-      <StoreLink link="/" imageSrc={kohlsLogo} altText="Kohl's" />
-      <StoreLink link="/" imageSrc={macysLogo} altText="Macy's" />
-      <StoreLink link="/" imageSrc={newlywishLogo} altText="Newlywish" />
-      <StoreLink link="/" imageSrc={reiLogo} altText="REI" />
-      <StoreLink link="/" imageSrc={zolaLogo} altText="Zola" />
+      <StoreLink link="/" imageSrc={etsyLogo} altText="Etsy Registry" />
+      <StoreLink link="/" imageSrc={jcpennyLogo} altText="JCPenny Registry" />
+      <StoreLink link="/" imageSrc={kohlsLogo} altText="Kohl's Registry" />
+      <StoreLink link="/" imageSrc={macysLogo} altText="Macy's Registry" />
+      <StoreLink
+        link="/"
+        imageSrc={newlywishLogo}
+        altText="Newlywish Registry"
+      />
+      <StoreLink link="/" imageSrc={reiLogo} altText="REI Registry" />
+      <StoreLink link="/" imageSrc={zolaLogo} altText="Zola Registry" />
     </div>
   </Fragment>
 )
