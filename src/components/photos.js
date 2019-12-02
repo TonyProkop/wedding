@@ -41,7 +41,7 @@ const Photos = () => {
 
   return (
     <Fragment>
-      <Gallery photos={images} onClick={openLightbox} targetRowHeight={400} />
+      <Gallery photos={images} onClick={openLightbox} targetRowHeight={"400"} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>

@@ -1,20 +1,36 @@
 @import "./shared.scss";
 
 .rsvpSection {
-  background-image: url("../images/footer-background.jpg");
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.0001) 20%
+    ),
+    url("../images/katie_and_me/footer.jpg");
   background-position: center;
-  background-size: cover bottom;
+  background-size: cover;
   background-repeat: no-repeat;
-  padding: 0 1rem 20rem;
+}
+
+.pageWidth {
+  max-width: $pageWidth;
+  margin: 0 auto;
+  padding: 125px 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacer {
+  flex: 1 1 50%;
 }
 
 .rsvpContainer {
-  margin: 0 auto;
   padding: 3rem 4rem;
   max-width: 600px;
   background-color: white;
   box-shadow: 0 2px 10px -3px #d3d3d3;
   border-radius: 10px;
+  flex: 1 1 50%;
 }
 
 .rsvpForm {
