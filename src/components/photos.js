@@ -25,7 +25,7 @@ const images = [
 ]
 
 // https://codesandbox.io/s/5vn3lvz2n4
-const Photos = props => {
+const Photos = () => {
   const [currentImage, setCurrentImage] = useState(0)
   const [viewerIsOpen, setViewerIsOpen] = useState(false)
 

@@ -11,6 +11,7 @@ import {
   faChevronRight,
   faBars,
   faTimes,
+  faHotel,
 } from "@fortawesome/free-solid-svg-icons"
 
 library.add(
@@ -20,7 +21,8 @@ library.add(
   faChevronDown,
   faChevronRight,
   faBars,
-  faTimes
+  faTimes,
+  faHotel
 )
 
 const Layout = ({ children }) => (

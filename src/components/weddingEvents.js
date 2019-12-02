@@ -11,12 +11,20 @@ const WeddingEvents = () => (
           <FontAwesomeIcon icon="church" className={styles.eventLocation} />
         }
         title="Ceremony"
-        time="2:00 PM"
-        locationName="St. James Church"
-        addressLine1="4710 North 90th Street"
-        addressLine2="Omaha, NE 68134"
         locationUrl="https://goo.gl/maps/h9atMBpbDPstEwNH6"
-      />
+      >
+        Saturday, 2 May 2020
+        <br />
+        2:00 PM
+        <br />
+        <br />
+        St. James Church
+        <br />
+        4710 North 90th Street
+        <br />
+        Omaha, NE 68134
+        <br />
+      </WeddingEvent>
       <WeddingEvent
         icon={
           <FontAwesomeIcon
@@ -25,25 +33,43 @@ const WeddingEvents = () => (
           />
         }
         title="Reception"
-        time="5:00 PM - 12:00 PM"
-        locationName="The Living Room"
-        addressLine1="1111 N 13th St"
+        locationUrl="https://goo.gl/maps/nLT3bTtK8NbjD1e78"
+      >
+        Saturday, 2 May 2020
+        <br />
+        5:00 PM - 12:00 PM
+        <br />
+        <br />
+        The Living Room
+        <br />
+        1111 N 13th St
+        <br />
+        Omaha, NE 68102
+        <br />
+      </WeddingEvent>
+      <WeddingEvent
+        icon={<FontAwesomeIcon icon="hotel" className={styles.eventLocation} />}
+        title="Accommodation"
+        locationName="Some Hotel"
+        addressLine1="Some Address"
         addressLine2="Omaha, NE 68102"
         locationUrl="https://goo.gl/maps/nLT3bTtK8NbjD1e78"
-      />
+      >
+        * Some text about how we have a block of hotels here, ask for them
+        <br />
+        <br />
+        Some Hotel
+        <br />
+        Some Address
+        <br />
+        Omaha, NE 68102
+        <br />
+      </WeddingEvent>
     </div>
   </Fragment>
 )
 
-const WeddingEvent = ({
-  icon,
-  title,
-  time,
-  locationName,
-  addressLine1,
-  addressLine2,
-  locationUrl,
-}) => (
+const WeddingEvent = ({ children, icon, title, locationUrl }) => (
   <a
     className={`${styles.weddingEvent} card`}
     href={locationUrl}
@@ -52,19 +78,7 @@ const WeddingEvent = ({
   >
     {icon}
     <h4>{title}</h4>
-    <p className={styles.address}>
-      Saturday, 2 May 2020
-      <br />
-      {time}
-      <br />
-      <br />
-      {locationName}
-      <br />
-      {addressLine1}
-      <br />
-      {addressLine2}
-      <br />
-    </p>
+    <p className={styles.address}>{children}</p>
     <div className={styles.seeLocation}>
       See Location
       <FontAwesomeIcon icon="chevron-right" />
