@@ -5,14 +5,15 @@
 
 .carousel {
   display: flex;
+  align-items: flex-end;
   overflow: visible;
 
-  img {
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-  }
+  //   img {
+  //     display: block;
+  //     width: 100vw;
+  //     height: 100vh;
+  //     object-fit: cover;
+  //   }
 }
 
 .control {
