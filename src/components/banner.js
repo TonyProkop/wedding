@@ -40,9 +40,8 @@ const Banner = () => {
       <Carousel rotateDuration={15000}>
         {data.allFile.nodes.map((x, i) => {
           return (
-            <div className={styles.bannerImage}>
+            <div className={styles.bannerImage} key={x.childImageSharp.id}>
               <Img
-                key={x.childImageSharp.id}
                 fluid={x.childImageSharp.fluid}
                 loading="eager"
                 objectFit="cover"

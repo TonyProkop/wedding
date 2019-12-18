@@ -25,6 +25,7 @@ import wide8 from "../images/gallery/wide_008.jpg"
 import wide9 from "../images/gallery/wide_009.jpg"
 
 const images = [
+  { src: tall6, width: 467, height: 700 },
   { src: tall7, width: 467, height: 700 },
   { src: tall8, width: 467, height: 700 },
   { src: tall0, width: 467, height: 700 },
@@ -33,7 +34,6 @@ const images = [
   { src: tall3, width: 467, height: 700 },
   { src: tall4, width: 467, height: 700 },
   { src: tall5, width: 467, height: 700 },
-  { src: tall6, width: 467, height: 700 },
   { src: tall9, width: 467, height: 700 },
   { src: wide0, width: 1400, height: 933 },
   { src: wide1, width: 1400, height: 933 },
@@ -86,7 +86,7 @@ const Photos = () => {
 
   return (
     <Fragment>
-      <Gallery photos={images} onClick={openLightbox} targetRowHeight={"400"} />
+      <Gallery photos={images} onClick={openLightbox} targetRowHeight={200} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
