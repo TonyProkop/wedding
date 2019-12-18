@@ -24,6 +24,12 @@
   flex: 1 1 50%;
 }
 
+@media (max-width: 800px) {
+  .spacer {
+    display: none;
+  }
+}
+
 .rsvpContainer {
   padding: 3rem 4rem;
   max-width: 600px;
@@ -44,6 +50,7 @@
   border: 0;
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 20px;
+  padding: 0;
 
   &:placeholder {
     color: #8e8e8e;
@@ -68,6 +75,17 @@
   }
 }
 
+.numbGuestsSelect {
+  margin-bottom: 20px;
+  display: inline-block;
+
+  select {
+    margin-left: 1rem;
+    color: #8e8e8e;
+    border: 1px solid #eaeaea;
+  }
+}
+
 .honeypot {
   display: none;
 }
@@ -78,7 +96,7 @@
   font-weight: bold;
   padding: 0.5rem 2.5rem;
   font-size: 0.75rem;
-  margin: 0 auto;
+  margin: 1rem auto 0;
   display: block;
 
   &:hover {

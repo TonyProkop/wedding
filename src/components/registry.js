@@ -16,7 +16,9 @@ import styles from "./registry.module.scss"
 const Registry = () => (
   <Fragment>
     <h3>Gift Registry</h3>
-    <p>Check back closer to the wedding for links to our gift registry!</p>
+    <p className={styles.tempVerbage}>
+      Check back closer to the wedding for links to our gift registry!
+    </p>
     {/* <div className={styles.registryContainer}>
       <StoreLink
         link="https://www.amazon.com/wedding/tony-prokop-katie-johnson-omaha-may-2020/registry/22K5VIT5RA99"
