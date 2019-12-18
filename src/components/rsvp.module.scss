@@ -43,7 +43,6 @@
   text-align: left;
   max-width: 800px;
   margin: auto;
-  color: #8e8e8e;
 }
 
 .rsvpInput {
@@ -51,9 +50,12 @@
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 20px;
   padding: 0;
+  padding-left: 4px;
+  color: #575757;
 
-  &:placeholder {
-    color: #8e8e8e;
+  &::placeholder {
+    color: #575757;
+    opacity: 1;
   }
 
   &:focus {
@@ -77,12 +79,13 @@
 
 .numbGuestsSelect {
   margin-bottom: 20px;
-  display: inline-block;
+  color: #575757;
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  width: 100%;
 
-  select {
-    margin-left: 1rem;
-    color: #8e8e8e;
-    border: 1px solid #eaeaea;
+  &.hide {
+    display: none;
   }
 }
 
