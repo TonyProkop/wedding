@@ -32,11 +32,12 @@ const Banner = () => {
         <h1 className={styles.bannerTitle}>Tony & Katie</h1>
         <div>May 2, 2020</div>
       </div>
+      <div className={styles.overlay}></div>
       {/* <FontAwesomeIcon
         icon="chevron-down"
         onClick={() => scrollIntoView("story")}
       /> */}
-      <Carousel rotateDuration={10000}>
+      <Carousel rotateDuration={15000}>
         {data.allFile.nodes.map((x, i) => {
           return (
             <div className={styles.bannerImage}>

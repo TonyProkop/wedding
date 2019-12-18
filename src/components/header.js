@@ -26,9 +26,9 @@ const Header = () => {
 
     let menu = (
       <ul className={styles.headerMenu}>
-        <li onClick={() => scrollIntoView("story")}>Our Story</li>
-        <li onClick={() => scrollIntoView("photos")}>Photos</li>
+        {/* <li onClick={() => scrollIntoView("story")}>Our Story</li> */}
         <li onClick={() => scrollIntoView("weddingEvents")}>Wedding Details</li>
+        <li onClick={() => scrollIntoView("photos")}>Photos</li>
         <li onClick={() => scrollIntoView("registry")}>Registry</li>
         <li onClick={() => scrollIntoView("rsvp")} className={styles.rsvp}>
           RSVP
