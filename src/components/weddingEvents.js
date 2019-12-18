@@ -53,9 +53,11 @@ const WeddingEvents = () => (
         locationName="Some Hotel"
         addressLine1="Some Address"
         addressLine2="Omaha, NE 68102"
-        locationUrl="https://goo.gl/maps/nLT3bTtK8NbjD1e78"
+        // locationUrl="https://goo.gl/maps/nLT3bTtK8NbjD1e78"
       >
-        * Some text about how we have a block of hotels here, ask for them
+        We'll be reserving a block of rooms at a hotel, check back later for
+        more details.
+        {/* * Some text about how we have a block of hotels here, ask for them
         <br />
         <br />
         Some Hotel
@@ -63,7 +65,7 @@ const WeddingEvents = () => (
         Some Address
         <br />
         Omaha, NE 68102
-        <br />
+        <br /> */}
       </WeddingEvent>
     </div>
   </Fragment>
@@ -79,10 +81,14 @@ const WeddingEvent = ({ children, icon, title, locationUrl }) => (
     {icon}
     <h4>{title}</h4>
     <p className={styles.address}>{children}</p>
-    <div className={styles.seeLocation}>
-      See Location
-      <FontAwesomeIcon icon="chevron-right" />
-    </div>
+    {locationUrl ? (
+      <div className={styles.seeLocation}>
+        See Location
+        <FontAwesomeIcon icon="chevron-right" />
+      </div>
+    ) : (
+      false
+    )}
   </a>
 )
 

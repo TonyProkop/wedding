@@ -16,7 +16,8 @@ import styles from "./registry.module.scss"
 const Registry = () => (
   <Fragment>
     <h3>Gift Registry</h3>
-    <div className={styles.registryContainer}>
+    <p>Check back closer to the wedding for links to our gift registry!</p>
+    {/* <div className={styles.registryContainer}>
       <StoreLink
         link="https://www.amazon.com/wedding/tony-prokop-katie-johnson-omaha-may-2020/registry/22K5VIT5RA99"
         imageSrc={amazonLogo}
@@ -49,7 +50,7 @@ const Registry = () => (
       />
       <StoreLink link="/" imageSrc={reiLogo} altText="REI Registry" />
       <StoreLink link="/" imageSrc={zolaLogo} altText="Zola Registry" />
-    </div>
+    </div> */}
   </Fragment>
 )
 

@@ -14,20 +14,20 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Tony & Katie's Wedding" />
     <Banner />
-    <PageSection id="story">
+    {/* <PageSection id="story">
       <Story />
+    </PageSection> */}
+    <PageSection id="weddingEvents">
+      <WeddingEvents />
     </PageSection>
     <PageSection id="photos">
       <Photos />
     </PageSection>
-    <PageSection id="weddingEvents">
-      <WeddingEvents />
+    <PageSection id="registry">
+      <Registry />
     </PageSection>
     <PageSection id="countdown">
       <Countdown />
-    </PageSection>
-    <PageSection id="registry">
-      <Registry />
     </PageSection>
     <PageSection id="rsvp">
       <RSVP />
