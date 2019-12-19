@@ -49,9 +49,9 @@ const Header = () => {
             </div>
 
             <ul className={styles.headerMenu}>
-              <li onClick={() => scrollIntoViewAndCloseMenu("story")}>
+              {/* <li onClick={() => scrollIntoViewAndCloseMenu("story")}>
                 Our Story
-              </li>
+              </li> */}
               <li onClick={() => scrollIntoViewAndCloseMenu("weddingEvents")}>
                 Wedding Details
               </li>
