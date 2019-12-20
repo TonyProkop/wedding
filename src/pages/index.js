@@ -22,8 +22,6 @@ const IndexPage = () => {
       </PageSection>
       <PageSection id="photos">
         <Photos />
-      </PageSection>
-      <PageSection id="countdown">
         <Countdown />
       </PageSection>
       <PageSection id="rsvp">
