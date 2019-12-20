@@ -47,7 +47,7 @@ const Banner = () => {
             <div className={styles.bannerImage} key={x.childImageSharp.id}>
               <Img
                 fluid={x.childImageSharp.fluid}
-                loading="eager"
+                loading={i === 0 ? "eager" : "lazy"}
                 objectFit="cover"
               />
             </div>
