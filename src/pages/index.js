@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense } from "react"
+import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageSection from "../components/pageSection"
@@ -7,6 +7,7 @@ import WeddingEvents from "../components/weddingEvents"
 import Registry from "../components/registry"
 import RSVP from "../components/rsvp"
 import Countdown from "../components/countdown"
+import Photos from "../components/photos"
 
 const IndexPage = () => {
   return (
@@ -20,9 +21,7 @@ const IndexPage = () => {
         <Registry />
       </PageSection>
       <PageSection id="photos">
-        <Suspense fallback={<div></div>}>
-          <Photos />
-        </Suspense>
+        <Photos />
       </PageSection>
       <PageSection id="countdown">
         <Countdown />
@@ -33,7 +32,5 @@ const IndexPage = () => {
     </Layout>
   )
 }
-
-const Photos = React.lazy(() => import("../components/photos"))
 
 export default IndexPage
