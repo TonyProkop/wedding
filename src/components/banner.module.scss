@@ -24,6 +24,10 @@
   height: 100vh;
 }
 
+.weddingCelebrationOf {
+  margin-bottom: 0.5rem;
+}
+
 .bannerText {
   position: absolute;
   top: 60%;
@@ -32,10 +36,11 @@
   right: 0;
   color: white;
   z-index: 2;
+  padding: 0 3rem;
 }
 
 .bannerTitle {
-  font-size: 7rem;
+  font-size: 6rem;
   margin: 0;
 }
 
@@ -52,5 +57,11 @@
 @media (max-width: 600px) {
   .bannerTitle {
     font-size: 5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .bannerTitle {
+    font-size: 4rem;
   }
 }
