@@ -43,11 +43,11 @@ const IndexPage = () => {
       <PageSection id="weddingEvents">
         <WeddingEvents />
       </PageSection>
-      <PageSection id="photos">
-        <Photos />
-      </PageSection>
       <PageSection id="registry">
         <Registry />
+      </PageSection>
+      <PageSection id="photos">
+        <Photos />
       </PageSection>
       <PageSection id="countdown">
         <Countdown />
