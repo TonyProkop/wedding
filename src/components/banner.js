@@ -1,28 +1,13 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import styles from "./banner.module.scss"
 import "./banner.scss"
+import bannerImage0 from "../images/banner/banner_000.jpg"
+import bannerImage1 from "../images/banner/banner_001.jpg"
+import bannerImage2 from "../images/banner/banner_002.jpg"
+import bannerImage3 from "../images/banner/banner_003.jpg"
 import Carousel from "./carousel"
 
 const Banner = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allFile(filter: { relativeDirectory: { eq: "banner" } }) {
-        nodes {
-          childImageSharp {
-            fluid(maxWidth: 1920, quality: 100) {
-              ...GatsbyImageSharpFluid_noBase64
-            }
-            id
-          }
-        }
-      }
-    }
-  `)
-
-  console.log(data)
-
   return (
     <div className={styles.bannerContainer}>
       <div className={styles.bannerText}>
@@ -36,17 +21,10 @@ const Banner = () => {
       </div>
       <div className={styles.overlay}></div>
       <Carousel rotateDuration={15000}>
-        {data.allFile.nodes.map((x, i) => {
-          return (
-            <div className={styles.bannerImage} key={x.childImageSharp.id}>
-              <Img
-                fluid={x.childImageSharp.fluid}
-                loading={i === 0 ? "eager" : "lazy"}
-                objectFit="cover"
-              />
-            </div>
-          )
-        })}
+        <img src={bannerImage0} className={styles.bannerImage} alt="Tony and Katie sitting in field" />
+        <img src={bannerImage1} className={styles.bannerImage} alt="Tony and Katie in forest" loading="lazy" />
+        <img src={bannerImage2} className={styles.bannerImage} alt="Tony and Katie on a hill" loading="lazy" />
+        <img src={bannerImage3} className={styles.bannerImage} alt="Tony and Katie in forest" loading="lazy" />
       </Carousel>
     </div>
   )

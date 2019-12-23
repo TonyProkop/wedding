@@ -10,7 +10,7 @@ const Carousel = ({ children, rotateDuration }) => {
       const interval = setInterval(
         () =>
           setActiveChild(activeChild =>
-            activeChild == children.length - 1 ? 0 : activeChild + 1
+            activeChild === children.length - 1 ? 0 : activeChild + 1
           ),
         rotateDuration
       )
