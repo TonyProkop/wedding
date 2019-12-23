@@ -61,7 +61,6 @@ const RSVP = () => {
                 className={styles.rsvpInput}
                 type="checkbox"
                 name="cantMakeIt"
-                value={cantMakeIt}
                 onChange={() => {
                   const newCantMakeIt = !cantMakeIt
                   setCantMakeIt(newCantMakeIt)

@@ -3,8 +3,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./banner.module.scss"
 import "./banner.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import scrollIntoView from "../utils/scrollIntoView"
 import Carousel from "./carousel"
 
 const Banner = () => {
@@ -37,10 +35,6 @@ const Banner = () => {
         <div>May 2, 2020</div>
       </div>
       <div className={styles.overlay}></div>
-      {/* <FontAwesomeIcon
-        icon="chevron-down"
-        onClick={() => scrollIntoView("story")}
-      /> */}
       <Carousel rotateDuration={15000}>
         {data.allFile.nodes.map((x, i) => {
           return (
