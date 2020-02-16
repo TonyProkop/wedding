@@ -37,7 +37,7 @@ const WeddingEvents = () => (
       >
         Saturday, 2 May 2020
         <br />
-        5:00 PM - 12:00 PM
+        5:00 PM - 12:00 AM
         <br />
         <br />
         The Living Room
