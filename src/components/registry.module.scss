@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   max-width: $pageWidth;
   margin: 0 auto;
+  align-items: center;
 }
 
 .store {
@@ -22,8 +23,4 @@
   .store {
     width: 250px;
   }
-}
-
-.tempVerbage {
-  padding: 0 1rem;
 }
