@@ -50,22 +50,11 @@ const WeddingEvents = () => (
       <WeddingEvent
         icon={<FontAwesomeIcon icon="hotel" className={styles.eventLocation} />}
         title="Accommodation"
-        locationName="Some Hotel"
-        addressLine1="Some Address"
-        addressLine2="Omaha, NE 68102"
-        // locationUrl="https://goo.gl/maps/nLT3bTtK8NbjD1e78"
       >
-        We'll be reserving a block of rooms at a hotel, check back later for
-        more details.
-        {/* * Some text about how we have a block of hotels here, ask for them
-        <br />
-        <br />
-        Some Hotel
-        <br />
-        Some Address
-        <br />
-        Omaha, NE 68102
-        <br /> */}
+		Because of the Berkshire Hathaway event in Omaha, hotels aren't allowing blocks of rooms to be reserved.  
+		<br />
+		<br />
+		If you need a hotel, book one soon.  Don't forget that Airbnb is also an option.
       </WeddingEvent>
     </div>
   </Fragment>
