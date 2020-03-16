@@ -31,7 +31,7 @@ const Countdown = () => {
 
   return (
     <div className={styles.container}>
-      <h3 className={styles.weddingDate}>May 2nd, 2020</h3>
+      {/* <h3 className={styles.weddingDate}>May 2nd, 2020</h3>
       <div className={styles.countdown}>
         <div className={styles.timeblock}>
           <div className={styles.number}>{days}</div>
@@ -49,7 +49,7 @@ const Countdown = () => {
           <div className={styles.number}>{seconds}</div>
           <div className={styles.label}>Secs</div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
