@@ -1,7 +1,6 @@
 import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
-import Covid from "./covid"
 import styles from "./layout.module.scss"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import {

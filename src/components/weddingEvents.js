@@ -11,12 +11,12 @@ const WeddingEvents = () => (
           <FontAwesomeIcon icon="church" className={styles.eventLocation} />
         }
         title="Ceremony"
-        locationUrl="https://goo.gl/maps/h9atMBpbDPstEwNH6"
+		url="https://goo.gl/maps/h9atMBpbDPstEwNH6"
+		linkText="See Location"
       >
-		Date TBD
-        {/* Saturday, 2 May 2020
+        Saturday, 21 November 2020
         <br />
-        2:00 PM */}
+        2:00 PM
         <br />
         <br />
         St. James Church
@@ -34,12 +34,12 @@ const WeddingEvents = () => (
           />
         }
         title="Reception"
-        locationUrl="https://goo.gl/maps/nLT3bTtK8NbjD1e78"
+		url="https://goo.gl/maps/nLT3bTtK8NbjD1e78"
+		linkText="See Location"
       >
-		Date TBD
-        {/* Saturday, 2 May 2020
+        Saturday, 21 November 2020
         <br />
-        5:00 PM - 12:00 AM */}
+        5:00 PM - 12:00 AM
         <br />
         <br />
         The Living Room
@@ -51,27 +51,37 @@ const WeddingEvents = () => (
       </WeddingEvent>
       <WeddingEvent
         icon={<FontAwesomeIcon icon="hotel" className={styles.eventLocation} />}
-        title="Accommodation"
+		title="Accommodation"
+		url="https://secure3.hilton.com/en_US/hp/reservation/book.htm?inputModule=HOTEL&ctyhocn=OMADNHX&spec_plan=CHHJOW&arrival=20201120&departure=20201122&cid=OM,WW,HILTONLINK,EN,DirectLink&fromId=HILTONLINKDIRECT"
+		linkText="Book Now"
       >
-		TBD
+		We have a block of rooms a 4 minute walk from the reception.
+		<br />
+		<br />
+		Hampton Inn & Suites Omaha-Downtown
+		<br />
+		1212 Cuming St
+		<br />
+		Omaha, NE 68102
+		<br />
       </WeddingEvent>
     </div>
   </Fragment>
 )
 
-const WeddingEvent = ({ children, icon, title, locationUrl }) => (
+const WeddingEvent = ({ children, icon, title, url, linkText }) => (
   <a
     className={`${styles.weddingEvent} card`}
-    href={locationUrl}
+    href={url}
     target="_blank"
     rel="noopener noreferrer"
   >
     {icon}
     <h4>{title}</h4>
     <p className={styles.address}>{children}</p>
-    {locationUrl ? (
+    {url ? (
       <div className={styles.seeLocation}>
-        See Location
+        {linkText}
         <FontAwesomeIcon icon="chevron-right" />
       </div>
     ) : (

@@ -5,7 +5,6 @@ import bannerImage0 from "../images/banner/banner_000.jpg"
 import bannerImage1 from "../images/banner/banner_001.jpg"
 import bannerImage2 from "../images/banner/banner_002.jpg"
 import bannerImage3 from "../images/banner/banner_003.jpg"
-import Covid from "./covid"
 import Carousel from "./carousel"
 
 const Banner = () => {
@@ -18,7 +17,7 @@ const Banner = () => {
         <h1 className={styles.bannerTitle}>
           Tony Prokop <br />& Katie Johnson
         </h1>
-        {/* <div>May 2, 2020</div> */}
+        <div>November 21, 2020</div>
       </div>
       <div className={styles.overlay}></div>
       <Carousel rotateDuration={15000}>
@@ -27,7 +26,6 @@ const Banner = () => {
         <img src={bannerImage2} className={styles.bannerImage} alt="Tony and Katie on a hill" loading="lazy" />
         <img src={bannerImage3} className={styles.bannerImage} alt="Tony and Katie in forest" loading="lazy" />
       </Carousel>
-    <Covid />
     </div>
   )
 }
