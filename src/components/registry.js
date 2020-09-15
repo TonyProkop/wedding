@@ -14,12 +14,12 @@ const Registry = () => (
         altText="Amazon Registry"
       />
       <StoreLink
-        link="https://www.menards.com/main/registrydetail.html?registryId=103867654&lastName=Johnson"
+        link="https://www.menards.com/main/registrydetail.html?registryId=109566337&lastName=Prokop"
         imageSrc={menardsLogo}
         altText="Menards Registry"
       />
       <StoreLink
-        link="https://registry.nfm.com/Event/Katie-Tony"
+        link="https://registry.nfm.com/Event/Tony-Katie"
         imageSrc={nfmLogo}
         altText="Nebraska Furniture Mart Registry"
       />
