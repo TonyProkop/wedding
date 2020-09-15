@@ -19,7 +19,7 @@ const Registry = () => (
         altText="Menards Registry"
       />
       <StoreLink
-        link="https://registry.nfm.com/Event/Tony-Katie"
+        link="https://registry.nfm.com/Event/Katie-Tony"
         imageSrc={nfmLogo}
         altText="Nebraska Furniture Mart Registry"
       />
