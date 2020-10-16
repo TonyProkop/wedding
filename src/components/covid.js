@@ -1,8 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import styles from "./covid.module.scss"
 
-const Covid = ({ showCovidModal, setShowCovidModal }) => {
+const Covid = () => {
+	const [showCovidModal, setShowCovidModal] = useState(false);
+
 	return (
 		<div>
 			<li onClick={() => setShowCovidModal(!showCovidModal)}>COVID-19</li>

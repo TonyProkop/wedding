@@ -7,7 +7,7 @@ import bannerImage2 from "../images/banner/banner_002.jpg"
 import bannerImage3 from "../images/banner/banner_003.jpg"
 import Carousel from "./carousel"
 
-const Banner = ({ showCovidModal, setShowCovidModal }) => {
+const Banner = () => {
   return (
     <div className={styles.bannerContainer}>
       <div className={styles.bannerText}>
@@ -18,7 +18,6 @@ const Banner = ({ showCovidModal, setShowCovidModal }) => {
           Tony Prokop <br />& Katie Johnson
         </h1>
         <div>November 21, 2020</div>
-		<button className={styles.covidButton} onClick={() => setShowCovidModal(!showCovidModal)}>COVID-19 Update</button>
       </div>
       <div className={styles.overlay}></div>
       <Carousel rotateDuration={15000}>
