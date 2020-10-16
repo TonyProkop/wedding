@@ -1,0 +1,65 @@
+.covidModalContainer {
+	display: none;
+	color: black;
+	font-size: 1rem;
+}
+
+.showCovidModal {
+	display: block;
+}
+
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	max-width: 100%;
+	height: 402px;
+	max-height: 100%;
+	z-index: 1010;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.closeModal {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.modalGuts {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 40px;
+	overflow: auto;	
+
+	h1 {
+		font-family: 'Poppins';
+		margin-bottom: 10px;
+	}
+
+	.precautionList {
+		margin-top: 40px;
+		
+		li {
+			box-shadow: none;
+			cursor: default;
+			text-align: left;
+		}
+	}
+}
+
+.modalOverlay {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	cursor: pointer;
+}

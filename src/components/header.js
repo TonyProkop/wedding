@@ -3,6 +3,7 @@ import React, { useState, useEffect, Fragment } from "react"
 import styles from "./header.module.scss"
 import scrollIntoView from "../utils/scrollIntoView"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Covid from "../components/covid"
 
 const Header = () => {
   try {
@@ -26,8 +27,8 @@ const Header = () => {
 
     let menu = (
       <ul className={styles.headerMenu}>
-        {/* <li onClick={() => scrollIntoView("story")}>Our Story</li> */}
         <li onClick={() => scrollIntoView("weddingEvents")}>Wedding Details</li>
+		<Covid />
         <li onClick={() => scrollIntoView("photos")}>Photos</li>
         <li onClick={() => scrollIntoView("registry")}>Registry</li>
         <li onClick={() => scrollIntoView("rsvp")} className={styles.rsvp}>
@@ -49,12 +50,10 @@ const Header = () => {
             </div>
 
             <ul className={styles.headerMenu}>
-              {/* <li onClick={() => scrollIntoViewAndCloseMenu("story")}>
-                Our Story
-              </li> */}
               <li onClick={() => scrollIntoViewAndCloseMenu("weddingEvents")}>
                 Wedding Details
               </li>
+			  <Covid />
               <li onClick={() => scrollIntoViewAndCloseMenu("photos")}>
                 Photos
               </li>
