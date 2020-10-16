@@ -23,6 +23,8 @@ const Covid = () => {
 							<li>Hand sanitizer provided</li>
 							<li>Color coded wrist bands for social distance preference</li>
 							<li>Must pass thermometer test to enter reception</li>
+							<li>Our venue and caterer are also going above and beyond to protect the health of our guests.</li>
+							<li>Feel free to reach out for more details if needed!</li>
 						</ul>
 					</div>
 				</div>
