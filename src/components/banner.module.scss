@@ -45,6 +45,16 @@
   margin: 0;
 }
 
+.covidButton {
+	outline: none;
+	border: none;
+	background-color: #588bae;
+	color: white;
+	margin-top: 80px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
 .overlay {
   position: absolute;
   top: 0;

@@ -25,9 +25,9 @@ library.add(
   faHotel
 )
 
-const Layout = ({ children }) => (
+const Layout = ({ children, showCovidModal, setShowCovidModal }) => (
   <Fragment>
-    <Header />
+    <Header showCovidModal={showCovidModal} setShowCovidModal={setShowCovidModal} />
     <div className={styles.pageContainer}>
       <main>{children}</main>
       <footer />

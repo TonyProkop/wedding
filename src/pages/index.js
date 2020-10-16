@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PageSection from "../components/pageSection"
@@ -10,10 +10,12 @@ import Countdown from "../components/countdown"
 import Photos from "../components/photos"
 
 const IndexPage = () => {
+  const [showCovidModal, setShowCovidModal] = useState(false);
+
   return (
-    <Layout>
+    <Layout showCovidModal={showCovidModal} setShowCovidModal={setShowCovidModal}>
       <SEO title="Tony & Katie's Wedding" />
-      <Banner />
+      <Banner showCovidModal={showCovidModal} setShowCovidModal={setShowCovidModal} />
       <PageSection id="weddingEvents">
         <WeddingEvents />
       </PageSection>

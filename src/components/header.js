@@ -5,7 +5,7 @@ import scrollIntoView from "../utils/scrollIntoView"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Covid from "../components/covid"
 
-const Header = () => {
+const Header = ({ showCovidModal, setShowCovidModal }) => {
   try {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 700)
     const [menuActive, setMenuActive] = useState(false)
@@ -28,7 +28,7 @@ const Header = () => {
     let menu = (
       <ul className={styles.headerMenu}>
         <li onClick={() => scrollIntoView("weddingEvents")}>Wedding Details</li>
-		<Covid />
+		<Covid showCovidModal={showCovidModal} setShowCovidModal={setShowCovidModal} />
         <li onClick={() => scrollIntoView("photos")}>Photos</li>
         <li onClick={() => scrollIntoView("registry")}>Registry</li>
         <li onClick={() => scrollIntoView("rsvp")} className={styles.rsvp}>
